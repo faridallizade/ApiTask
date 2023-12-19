@@ -1,4 +1,6 @@
 using ApiTask.DAL;
+using ApiTask.Repositories.Implementatitons;
+using ApiTask.Repositories.Interfaces;
 using Microsoft.EntityFrameworkCore;
 
 namespace ApiTask
@@ -9,7 +11,7 @@ namespace ApiTask
         {
             var builder = WebApplication.CreateBuilder(args);
 
-
+            builder.Services.AddScoped<IBrandRepo,BrandRepo>();
             builder.Services.AddControllers();
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();
