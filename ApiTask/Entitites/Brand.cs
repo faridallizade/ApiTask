@@ -1,8 +1,7 @@
 ﻿namespace ApiTask.Entitites
 {
-    public class Brand
+    public class Brand :BaseEntity
     {
-        public int Id { get; set; }
         public string Name { get; set; }
         public List<Car> Cars { get; set; }
     }

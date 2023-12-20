@@ -1,8 +1,7 @@
 ﻿namespace ApiTask.Entitites
 {
-    public class Car
+    public class Car:BaseEntity
     {
-        public int Id { get; set; }
         public int Modelyear { get; set; }
         public double DailyPrice { get; set; }
         public string Description { get; set; }

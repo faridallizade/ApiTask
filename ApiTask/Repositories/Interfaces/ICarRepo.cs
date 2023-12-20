@@ -3,8 +3,10 @@ using System.Linq.Expressions;
 
 namespace ApiTask.Repositories.Interfaces
 {
-    public interface IBrandRepo :IGeneric<Brand>
+    public class ICarRepo
     {
-       
+        public interface ICarRepository:IGeneric<Car>
+        {
+        }
     }
 }

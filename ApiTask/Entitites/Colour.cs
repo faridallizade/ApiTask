@@ -1,8 +1,7 @@
 ﻿namespace ApiTask.Entitites
 {
-    public class Colour
+    public class Colour :BaseEntity
     {
-        public int Id { get; set; }
         public string Name { get; set; }
         public List<Car> Cars { get; set; }
     }
